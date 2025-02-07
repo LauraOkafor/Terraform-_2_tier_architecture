@@ -9,21 +9,21 @@ The 2-tier architecture consists of:
 * VPC: A Virtual Private Cloud to host resources securely.
 
 * Subnets:
-* Public Subnet (for web servers)
+    * Public Subnet (for web servers)
 
-* Private Subnet (for database servers)
+    * Private Subnet (for database servers)
 
 * Internet Gateway & Route Tables: To enable internet access for the public subnet.
 
 * Security Groups:
-* Web server security group (allows HTTP/HTTPS traffic)
+    * Web server security group (allows HTTP/HTTPS traffic)
 
-* Database security group (restricts access to the web servers only)
+    * Database security group (restricts access to the web servers only)
 
 * EC2 Instances:
-* Web Server (in the public subnet)
+    * Web Server (in the public subnet)
 
-* Database Server (in the private subnet)
+    * Database Server (in the private subnet)
 
 * RDS Instance: Hosted in the private subnet for database services.
 
